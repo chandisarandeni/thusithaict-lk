@@ -1,0 +1,39 @@
+/*This is the style sheet for the index.html file*/
+
+/*Basic styles of a button*/
+.basic-button {
+  text-align: center;
+  color: white;
+  background-color: #ed1394;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.basic-button:hover {
+  background-color: #cc0077;
+  color: white;
+}
+
+/*nav item hover effect*/
+.nav-item {
+    transition: all 0.5s ease;
+}
+
+.nav-item:hover {
+    font-size: 1.1em;
+    transform: scale(1);
+}
+
+
+
+/*Basic styles of a text*/
+.basic-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
