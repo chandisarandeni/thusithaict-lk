@@ -37,3 +37,25 @@
   font-weight: bold;
   font-size: 17px;
 }
+
+
+
+
+/*Basic adjustment of a login*/
+@media (max-width: 992px) {
+  #btn-login {
+    display: none;
+  }
+  #btn-loginSubButton {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  #btn-login {
+    display: block;
+  }
+  #btn-loginSubButton {
+    display: none;
+  }
+}
