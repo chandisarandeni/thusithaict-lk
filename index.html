@@ -10,53 +10,30 @@
 
   <!--index css-->
   <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="components/css/animation.css" />
+  <link rel="stylesheet" href="components/css/base-animation.css" />
   <link rel="stylesheet" href="components/css/instituteAnimation.css" />
   <title>Thusitha ICT</title>
 </head>
 
 <body>
+
+  <!--import base animation canvas-->
   <canvas id="animationCanvas"></canvas>
   <script src="components/js/particles.js"></script>
-  <!-- Navigation Bar -->
-  <div class="py-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-center shadow-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <!-- Main Logo -->
-          <img src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png"
-            alt="Thusitha ICT Logo" width="164" height="45" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center basic-text" id="navbarNav">
-          <ul class="navbar-nav align-items-center">
-            <li class="nav-item mx-3">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#"">About</a>
-              </li>
-              <li class=" nav-item mx-3">
-                <a class="nav-link" href="#timetableSection"">Classes</a>
-              </li>
-              <li class=" nav-item mx-3">
-                  <a class="nav-link" href="#">Teachers</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#" id="btn-loginSubButton" class="btn basic-button" style="width: 100px">Login</a>
-            </li>
-          </ul>
-        </div>
-        <a href="#" id="btn-login" class="btn basic-button">Login</a>
-      </div>
-    </nav>
-  </div>
-  <!-- Navigation Bar End-->
+
+  <!--import navbar content-->
+  <div id="navBar"></div>
+
+  <script>
+    fetch("components/structure/navbar.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("navBar").innerHTML = data;
+      });
+  </script>
+  <!--end of navbar content-->
 
   <br />
   <br /><br /><br />
@@ -142,7 +119,8 @@
     <div class="row d-flex align-items-center justify-content-center">
       <h3 class="text-center text-style">Timetable</h3> <br><br><br><br><br>
       <div class="container justify-content-center d-flex justify-content-center">
-        <img id="timetableImage" src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741969429/srthdfgbn-1536x1280_hw7e2o.jpg"
+        <img id="timetableImage"
+          src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741969429/srthdfgbn-1536x1280_hw7e2o.jpg"
           alt="Timetable png" style="width: 70%;" />
       </div>
     </div>
