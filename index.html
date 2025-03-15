@@ -38,94 +38,47 @@
   <br />
   <br /><br /><br />
 
-  <!-- Main Text Area-->
-  <div class="container justify-content-center">
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-md-6 mx-5">
-        <h1 class="main-text">Learn ICT with Thusitha</h1>
-        <p class="sub-text basic-text">
-          Learn ICT with Thusitha is a leading ICT education provider in Sri
-          Lanka. We provide the best ICT education for students who are
-          following the G.C.E. Ordinary Level and Advanced Level examinations.
-        </p>
-        <a href="#" class="btn basic-button">Get Started</a>
-      </div>
-      <div class="col-md-4 mx-2">
-        <img src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741960378/Photo-For-About-768x768_n77r7j.png"
-          alt="Thusitha ICT Logo" width="500" height="500" />
-      </div>
-    </div>
-  </div>
+  <!--Main Text Area-->
+  <div id="mainTextArea"></div>
+  <script>
+    fetch("components/structure/mainTextArea.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("mainTextArea").innerHTML = data;
+      });
+  </script>
   <!--Main Text Area End-->
-  <br /><br />
+
   <!--Educational Institutes-->
-  <div class="container justify-content-center">
-    <div class="row d-flex align-items-center justify-content-center">
-      <h3 class="text-center text-style">Educational Institutes</h3>
-    </div>
-    <div class="container justify-content-center">
-      <div class="slider-area align-items-center">
-        <br />
-        <div class="wrapper">
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-          <div class="item">
-            <img alt=""
-              src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741761841/ThusithaICTIcon_bohsr8.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br /><br />
+  <div id="educationalInstitutes"></div>
+  <script>
+    fetch("components/structure/educationalInstitutes.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("educationalInstitutes").innerHTML = data;
+      });
+  </script>
   <!--Educational Institutes End-->
 
-  <!--Timetable-->
-  <div id="timetableSection" class="container d-flex justify-content-center">
-    <div class="row d-flex align-items-center justify-content-center">
-      <h3 class="text-center text-style">Timetable</h3> <br><br><br><br><br>
-      <div class="container justify-content-center d-flex justify-content-center">
-        <img id="timetableImage"
-          src="https://res.cloudinary.com/dwbw83rrr/image/upload/v1741969429/srthdfgbn-1536x1280_hw7e2o.jpg"
-          alt="Timetable png" style="width: 70%;" />
-      </div>
-    </div>
-  </div>
-  <!--Timetable End-->
+
+  <br /><br />
+
+  <!--Timetable Section-->
+  <div id="timetableSection"></div>
+  <script>
+    fetch("components/structure/timetableSection.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("timetableSection").innerHTML = data;
+      });
+  </script>
+  <!--Timetable Section End-->
 
   <br><br><br><br><br><br><br><br>
 
