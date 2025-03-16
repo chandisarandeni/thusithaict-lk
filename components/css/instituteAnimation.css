@@ -28,8 +28,13 @@
 }
 
 .item {
-  display: flex; /* Ensure the items are side by side */
-  animation: animate 5s linear infinite; /* Continuous animation */
+  display: flex;
+  animation: animate 5s linear infinite;
+  gap: 20px; /* Adds space between images */
+}
+
+.item img {
+  margin-right: 20px; /* Alternative way */
 }
 
 @keyframes animate {
@@ -37,7 +42,11 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-100%, 0, 0); /* Moves the full width of the container */
+    transform: translate3d(
+      -100%,
+      0,
+      0
+    ); /* Moves the full width of the container */
   }
 }
 
