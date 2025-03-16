@@ -29,7 +29,7 @@
 
 .item {
   display: flex;
-  animation: animate 5s linear infinite;
+  animation: animate 10s linear infinite;
   gap: 20px; /* Adds space between images */
 }
 
