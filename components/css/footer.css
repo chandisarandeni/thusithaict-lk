@@ -1,0 +1,38 @@
+.footer-background {
+    background-color: rgba(56, 56, 56, 0.5);
+}
+
+.footer-text{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    background-color: transparent;
+}
+
+.table-style {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+}
+
+.table-style td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.table-style tr:last-child td {
+    border-bottom: none;
+}
+
+.table-style tbody {
+    color: white;
+    background-color: transparent;
+}
+
+.social-background{
+    background-color: #cc0077;
+}
