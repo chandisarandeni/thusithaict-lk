@@ -69,6 +69,7 @@
   <br /><br />
 
   <!--Timetable Section-->
+  <!--
   <div id="timetableSection"></div>
   <script>
     fetch("components/structure/timetableSection.html")
@@ -79,7 +80,23 @@
         document.getElementById("timetableSection").innerHTML = data;
       });
   </script>
+  -->
   <!--Timetable Section End-->
+
+
+  <!--New Timetable Section-->
+  <div id="newTimetableSection">
+    <script>
+      fetch("components/structure/currentSchedule.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("newTimetableSection").innerHTML = data;
+        });
+    </script>
+  </div>
+  <!--New Timetable Section End-->
 
   <br><br>
 
