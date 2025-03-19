@@ -1,4 +1,7 @@
-/* Teacher Carousel Styles */
+/*
+    /// This is mainly a CSS file that styles the teacher carousel in the index.html file.
+    /// It is used to animate teachers details
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -78,7 +81,7 @@
 }
 
 .card:nth-of-type(3) .image-container {
-  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("https://res.cloudinary.com/dwbw83rrr/image/upload/v1741960378/Photo-For-About-768x768_n77r7j.png");
 }
 
 .card:nth-of-type(4) .image-container {
