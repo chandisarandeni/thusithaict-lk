@@ -1,6 +1,6 @@
 .time-card {
   padding: 10px 0px 10px;
-  background-color: #333333;
+  background-color: #737373;
   min-height: 400px;
   max-height: 600px;
   border-radius: 8px;
@@ -94,20 +94,40 @@ a.panel-button {
   vertical-align: middle;
 }
 
+/* For screens smaller than 991px (tablets and large mobile devices) */
 @media (max-width: 991px) {
   .card {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 90%; /* More flexible width */
+    max-width: 300px; /* Limits max width */
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Padding for better spacing */
   }
 }
 
+/* For screens smaller than 768px (tablets and smaller devices) */
 @media (max-width: 768px) {
   .card {
+    width: 100%; /* Full width for mobile */
     min-height: 300px;
   }
   .panel-body {
     max-height: 200px;
-    font-size: 15px;
-    padding: 0px 5px;
+    font-size: 14px; /* Slightly smaller font */
+    padding: 0px 10px; /* Adjust padding */
+  }
+}
+
+/* For extra small devices (mobiles less than 480px) */
+@media (max-width: 480px) {
+  .card {
+    width: 95%; /* Makes the card take almost the full width */
+    padding: 5px; /* Reduces padding for smaller screens */
+  }
+  .panel-body {
+    font-size: 13px; /* Smaller text for mobile */
+    padding: 0px 5px; /* Reduces padding */
   }
 }
