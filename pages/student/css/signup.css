@@ -37,7 +37,7 @@ body {
 .box {
   position: relative;
   width: 750px;
-  height: 1000px;
+  height: 1100px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -242,4 +242,11 @@ body {
 
 #submit:active {
   opacity: 0.8;
+}
+
+
+/* Words Capitalization*/
+
+#studentName {
+  text-transform: capitalize;
 }
