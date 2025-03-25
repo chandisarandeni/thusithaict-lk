@@ -33,7 +33,7 @@ class Particle {
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-    ctx.fillStyle = "rgba(255, 0, 0, 0.3)"; // Reduced opacity
+    ctx.fillStyle = "rgba(237, 19, 148, 0.3)"; // Reduced opacity
     ctx.fill();
   }
 
@@ -103,7 +103,7 @@ function connect() {
           (particlesArray[a].y - particlesArray[b].y);
       if (distance < (canvas.width / 7) * (canvas.height / 7)) {
         opacityValue = 1 - distance / 5000;
-        ctx.strokeStyle = "rgba(255,40,10," + opacityValue * 0.3 + ")"; // Reduced opacity
+        ctx.strokeStyle = "rgba(237,19,148," + opacityValue * 0.3 + ")"; // Reduced opacity
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

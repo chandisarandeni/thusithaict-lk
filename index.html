@@ -38,13 +38,13 @@
 
   <!--import base animation canvas-->
   <canvas id="animationCanvas"></canvas>
-  <script src="components/js/particles.js"></script>
+  <script src="/components/js/particles.js"></script>
 
   <!--import navbar content-->
   <div id="navBar"></div>
 
   <script>
-    fetch("components/structure/navbar.html")
+    fetch("/components/structure/navbar.html")
       .then((response) => {
         return response.text();
       })
@@ -60,7 +60,7 @@
   <!--Main Text Area-->
   <div id="mainTextArea"></div>
   <script>
-    fetch("components/structure/mainTextArea.html")
+    fetch("/components/structure/mainTextArea.html")
       .then((response) => {
         return response.text();
       })
@@ -73,7 +73,7 @@
   <!--Educational Institutes-->
   <div id="educationalInstitutes"></div>
   <script>
-    fetch("components/structure/educationalInstitutes.html")
+    fetch("/components/structure/educationalInstitutes.html")
       .then((response) => {
         return response.text();
       })
@@ -105,7 +105,7 @@
   <!--New Timetable Section-->
   <div id="newTimetableSection">
     <script>
-      fetch("components/structure/currentSchedule.html")
+      fetch("/components/structure/currentSchedule.html")
         .then((response) => {
           return response.text();
         })
