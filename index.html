@@ -18,7 +18,8 @@
 
   <!--Meta Tags to the Website-->
   <meta name="description" content="Thusitha ICT" />
-  <meta name="keywords" content="Thusitha ICT, OL ICT Past Papers, Thusitha Kumara, Thusitha Kumara Abeysinghe, ICT with Thusitha Kumara">
+  <meta name="keywords"
+    content="Thusitha ICT, OL ICT Past Papers, Thusitha Kumara, Thusitha Kumara Abeysinghe, ICT with Thusitha Kumara">
   <meta name="author" content="Thusitha Kumara">
 
   <!-- Bootstrap CSS -->
@@ -86,22 +87,6 @@
 
   <br /><br />
 
-  <!--Timetable Section-->
-  <!--
-  <div id="timetableSection"></div>
-  <script>
-    fetch("components/structure/timetableSection.html")
-      .then((response) => {
-        return response.text();
-      })
-      .then((data) => {
-        document.getElementById("timetableSection").innerHTML = data;
-      });
-  </script>
-  -->
-  <!--Timetable Section End-->
-
-
   <!--New Timetable Section-->
   <div id="newTimetableSection">
     <script>
@@ -118,44 +103,21 @@
 
   <br><br>
 
-  <!--Teachers Carasoul-->
-  <div id="teachersSection" class="container">
-    <h3 class="text-style text-center">Teachers</h3>
-  </div>
 
-  <div class="carasoul-container py-0 d-flex justify-content-center">
-    <div class="card-carousel">
-      <div class="card" id="1">
-        <div class="image-container"></div>
-        <p class="h3">Thusitha Kumara</p>
-        <p class="py-2">BSc (Hons) in Computer Science <br>Dip. in Information Technology</p>
-        <p></p>
-      </div>
-      <div class="card" id="2">
-        <div class="image-container"></div>
-        <p class="h3">Thusitha Kumara</p>
-        <p class="py-2">BSc (Hons) in Computer Science <br>Dip. in Information Technology</p>
-      </div>
-      <div class="card" id="3">
-        <div class="image-container"></div>
-        <p class="h3">Thusitha Kumara</p>
-        <p class="py-2">BSc (Hons) in Computer Science <br>Dip. in Information Technology</p>
-      </div>
-      <div class="card" id="4">
-        <div class="image-container"></div>
-        <p class="h3">Thusitha Kumara</p>
-        <p class="py-2">BSc (Hons) in Computer Science <br>Dip. in Information Technology</p>
-      </div>
-      <div class="card" id="5">
-        <div class="image-container"></div>
-        <p class="h3">Thusitha Kumara</p>
-        <p class="py-2">BSc (Hons) in Computer Science <br>Dip. in Information Technology</p>
-      </div>
-    </div>
-    <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-  </div>
-  <script src="/components/js/teachersCarasoul.js"></script>
-  <!--Teachers Carasoul End-->
+
+  <!-- Teacher Carasoul End -->
+  <div id="teacherScorll"></div>
+  <script>
+    fetch("/components/structure/teacherCarasoul.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("teacherScorll").innerHTML = data;
+        const script = document.createElement("script");
+        script.src = "/components/js/teachersCarasoul.js";
+        document.body.appendChild(script);
+      });
+  </script>
+  <!-- Teacher Carasoul End -->
 
   <br><br><br>
 
