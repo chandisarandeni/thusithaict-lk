@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thusitha ICT</title>
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div id="sideBar"></div>
+    <script>
+        fetch("/pages/student/structure/hamburger.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("sideBar").innerHTML = data;
+                const script = document.createElement("script");
+                script.src = "/pages/student/js/ham.js";
+                document.body.appendChild(script);
+            });
+    </script>
+
+</body>
+
+</html>
