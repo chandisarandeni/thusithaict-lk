@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thusitha ICT</title>
 
+    <script src="/components/js/disableRightClick.js"></script>
+    <style>
+        #sideBar{
+            position: relative;
+            z-index: 2;
+        }
+        #basicTable{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,6 +31,18 @@
                 document.body.appendChild(script);
             });
     </script>
+
+<br><br>
+
+    <div id="basicTable">
+        <script>
+            fetch("/pages/student/structure/month-content.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("basicTable").innerHTML = data;
+                });
+        </script>
+    </div>
 
 </body>
 
