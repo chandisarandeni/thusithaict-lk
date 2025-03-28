@@ -1,0 +1,12 @@
+#titleText{
+    font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+    #titleText {
+        display: none;
+    }
+    #basicTable{
+        margin-top: 45px;
+    }
+}
