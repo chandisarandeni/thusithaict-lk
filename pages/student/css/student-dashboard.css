@@ -1,12 +1,15 @@
-#titleText{
-    font-family: sans-serif;
+#titleText {
+  font-family: sans-serif;
 }
 
 @media (max-width: 768px) {
-    #titleText {
-        display: none;
-    }
-    #basicTable{
-        margin-top: 45px;
-    }
+  #titleText {
+    margin-top: 70px;
+  }
+  #basicTable {
+    margin-top: 45px;
+  }
+  #live-calendar {
+    display: none;
+  }
 }

@@ -23,6 +23,11 @@
             position: relative;
             z-index: 1;
         }
+
+        #live-calendar {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -48,6 +53,7 @@
         </h1>
     </div>
 
+    <!-- Promotion Section -->
     <div id="promotion-section">
         <script>
             fetch("/pages/student/structure/promotion-section.html")
@@ -57,6 +63,20 @@
                 });
         </script>
     </div>
+
+    <!-- Calendar Area -->
+    <!-- <div id="live-calendar"></div>
+    <script>
+        fetch("/pages/student/structure/live-calendar.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("live-calendar").innerHTML = data;
+                const script = document.createElement("script");
+                script.src = "/pages/student/js/live-calendar.js";
+                document.body.appendChild(script);
+            });
+    </script> -->
+
 
 
     <!-- <div id="basicTable">
