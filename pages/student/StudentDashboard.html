@@ -18,6 +18,11 @@
             position: relative;
             z-index: 1;
         }
+
+        #promotion-section {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -43,7 +48,18 @@
         </h1>
     </div>
 
-    <div id="basicTable">
+    <div id="promotion-section">
+        <script>
+            fetch("/pages/student/structure/promotion-section.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("promotion-section").innerHTML = data;
+                });
+        </script>
+    </div>
+
+
+    <!-- <div id="basicTable">
         <script>
             fetch("/pages/student/structure/month-content.html")
                 .then((response) => response.text())
@@ -51,7 +67,7 @@
                     document.getElementById("basicTable").innerHTML = data;
                 });
         </script>
-    </div>
+    </div> -->
 
 </body>
 
