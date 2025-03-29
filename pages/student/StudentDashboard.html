@@ -6,6 +6,7 @@
     <title>Thusitha ICT</title>
 
     <link rel="stylesheet" href="/pages/student/css/student-dashboard.css">
+    <link rel="stylesheet" href="/components/css/instituteAnimation.css">
 
     <script src="/components/js/enable-sec.js"></script>
     <style>
@@ -28,10 +29,21 @@
             position: relative;
             z-index: 1;
         }
+
+        #animationCanvas {
+            position: fixed;
+            z-index: -1;
+            opacity: 0.23;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Background Animation with faded canvas -->
+    <canvas id="animationCanvas"></canvas>
+    <script src="/components/js/particles.js"></script>
+
+
     <!-- Sidebar -->
     <div id="sideBar"></div>
     <script>
@@ -44,7 +56,6 @@
                 document.body.appendChild(script);
             });
     </script>
-
     <br>
     <!-- Main Title -->
     <div id="titleText" class="container">
