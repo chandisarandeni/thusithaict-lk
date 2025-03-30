@@ -2,12 +2,12 @@
   font-family: sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #titleText {
     margin-top: 70px;
   }
-  #basicTable {
-    margin-top: 45px;
+  #promotion-section{
+    width: 100%;
   }
   #live-calendar {
     display: none;
